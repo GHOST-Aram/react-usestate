@@ -5,9 +5,10 @@ const IntervalHookCounter = () => {
 
     
     const tick = (counter) =>{
-        setCounter(counter + 1)
+        setCounter(() =>counter + 1)
     }
     useEffect(()=>{
+        console.log('call effect')
         const interval = setInterval(()=> tick(counter), 1000)
 
         return () => {clearInterval(interval)}
