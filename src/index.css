@@ -1,3 +1,6 @@
+.bg-gray{
+  background-color: gray;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +10,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.border-none{
+  border: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -22,4 +28,10 @@ form{
   align-items: start;
   width: 200px;
   margin-inline: auto;
+}
+.px-8{
+  padding-inline: 1rem;
+}
+.py-4{
+  padding-block: 1rem;
 }
