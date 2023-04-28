@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-
+import App from '../App'
+import { Link } from 'react-router-dom'
 const DataFetching = () => {
     const [user, setuser] = useState({})
 
@@ -35,6 +36,8 @@ const DataFetching = () => {
         {/* {
             posts.map(user => <li key={user.email}>{user.name}</li>)
         } */}
+        <Link to= '/' component = {<App />}>
+        <button><h1>Home Base</h1></button></Link>
     </div>
   )
 }

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import StateHooks4 from './StateHooks4'
 
 const StateHook3 = () => {
     /**
@@ -26,6 +28,7 @@ const StateHook3 = () => {
         {
             users.map((user, index) => <li key={index}>{user}</li>)
         }
+        <Link to='/statehooks4' component ={<StateHooks4 />}><button>StateHook 4</button></Link>
     </div>
   )
 }

@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import EffectHook1 from './EffectHook1'
+import DataFetching from './DataFetching'
 
 const StateHooks5 = () => {
     const [mouseX, setMouseX] = useState(0)
@@ -11,7 +14,6 @@ const StateHooks5 = () => {
         console.log('Event still binded')
     }
     useEffect(()=>{
-        console.log('Event added, use Effect called')
         window.addEventListener('mousemove', logMousePosition)
 
         return ()=>{
@@ -22,6 +24,7 @@ const StateHooks5 = () => {
     <div>
         
         <h1>Mouse position  X - ${mouseX} Y - ${mouseY}</h1>
+        <Link to='/effect-hook-1' component = {<DataFetching />}>Effect hook 1</Link>
     </div>
   )
 }

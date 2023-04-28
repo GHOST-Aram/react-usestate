@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import StateHook3 from './StateHook3'
 
 /**
  * Updating states of object variables
@@ -12,7 +14,7 @@ const StateHook2 = () => {
   return (
     <div>
         <form action="">
-
+          <Link to='/statehook3'>SateHook 3</Link>
             <input type="text" 
             // Use Spread operator to update object states, 
             // use state does not merge the objects properties automatically during update
